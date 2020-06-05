@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         
          // ناد الداله تحت
        
+    addname(name: name, helloarray: HelloLangauge, flagarray: flagLanguage)
     
     //النهايه
          
@@ -41,7 +42,14 @@ class ViewController: UIViewController {
      }
 
     // اكتب الداله هنا
-        
+        func addname (name: String,helloarray : [String], flagarray : [String])
+               {
+                   for index in 0..<( helloarray.count)
+                  {
+                   greetingarray[index] = flagarray[index] + helloarray[index] + name
+                   
+                }
+               }
         
       
     //النهايه
